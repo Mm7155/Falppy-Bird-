@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #34495e;
+    color: white;
+    font-family: 'Bangers', cursive;
+    overflow: hidden;
+}
+#game-container {
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    max-height: 800px;
+    background: #70c5ce;
+    border: 5px solid #2c3e50;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2), 0 6px 6px rgba(0,0,0,0.25);
+}
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+#ui-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none; /* Let clicks pass through to the canvas */
+}
+.message {
+    text-align: center;
+    padding: 20px;
+    background: rgba(44, 62, 80, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    -webkit-text-stroke: 2px black;
+}
+#score {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    -webkit-text-stroke: 3px black;
+    text-shadow: 4px 4px 0 #000;
+}
+#start-screen, #game-over-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    pointer-events: all; /* Enable clicks on buttons */
+}
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    text-shadow: 4px 4px 0 #000;
+}
+p {
+    font-size: 1.5rem;
+    margin-top: 0;
+     text-shadow: 2px 2px 0 #000;
+}
+.button {
+    padding: 15px 30px;
+    font-size: 1.8rem;
+    font-family: 'Bangers', cursive;
+    background: #e74c3c;
+    color: white;
+    border-radius: 10px;
+    border: 3px solid #c0392b;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 5px 0 #96281b;
+    -webkit-text-stroke: 2px black;
+}
+.button:active {
+    transform: translateY(5px);
+    box-shadow: 0 0px 0 #96281b;
+}
+
+
