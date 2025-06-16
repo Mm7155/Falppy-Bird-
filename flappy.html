@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Flappy Angry Bird</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+        <div id="ui-layer">
+            <div id="score" style="display: none;">0</div>
+            <div id="start-screen" class="message">
+                <h1>Flappy Angry Bird</h1>
+                <p>Tap to fly!</p>
+                <div class="button" id="start-button">Start Game</div>
+            </div>
+            <div id="game-over-screen" class="message" style="display: none;">
+                <h1>Game Over</h1>
+                <p>Final Score: <span id="final-score">0</span></p>
+                <div class="button" id="restart-button">Restart</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
